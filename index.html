@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <i class="fas fa-info-circle info-icon"></i> <!-- Info button -->
+      <i class="fas fa-info-circle info-icon-left"></i> <!-- New info button at top-left -->
+      <header>Convert-o-Matic</header>
+      <form action="#">
+        <div class="amount">
+          <input type="number" placeholder="Enter the length">
+        </div>
+        <div class="drop-list">
+            <div class="from">
+                <p>From</p>
+                <div class="select-box">
+                    <select id="fromUnit">
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="mile">Mile</option>
+                        <option value="yard">Yard</option>
+                        <option value="foot">Foot</option>
+                    </select>  
+                </div>
+            </div>
+            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+                <p>To</p>
+                <div class="select-box">
+                    <select id="toUnit">
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="mile">Mile</option>
+                        <option value="yard">Yard</option>
+                        <option value="foot">Foot</option>
+                    </select>                
+                </div>
+            </div>
+            </div>
+        <div class="result"></div>
+        <br>
+        <button>Get Result</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
